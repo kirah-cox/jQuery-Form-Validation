@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form id="registration-form">
+   <label for="username">Username:</label>
+   <input type="text" id="username" name="username">
+   <div id="username-error" class="error"></div>
+
+   <label for="password">Password:</label>
+   <input type="password" id="password" name="password">
+   <div id="password-error" class="error"></div>
+
+   <label for="confirmpassword">Confirm Password:</label>
+   <input type="password" id="confirmpassword" name="confirmpassword">
+   <div id="confirmpassword-error" class="error"></div>
+
+   <button type="submit">Register</button>
+</form>
